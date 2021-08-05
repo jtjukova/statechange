@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+    demo:
+      build:
+        context: ./
+      image: state-demo
+      ports:
+        - 9000:9000
+      networks:
+        - network1
+
+networks:
+  network1:
